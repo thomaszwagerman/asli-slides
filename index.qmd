@@ -55,7 +55,7 @@ date: last-modified
 * [asliapp](https://github.com/antarctica/asliapp/tree/main): Shiny application.
 
 ## Use-case 1: Technical Implementation
-![](images/asli-example.jpg)
+![](images/asli-technical-overview-light.png)
 
 ## Discussion: FAIR Principles
 - FAIR Principles: archival of "live" data products.
