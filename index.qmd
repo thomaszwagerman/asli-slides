@@ -1,0 +1,56 @@
+---
+title: BOOST-EDS
+subtitle: Demonstrating EDS services with ASLI
+format:
+  basdoc-revealjs: default
+author: 
+  - Thomas Zwagerman
+institute: 
+  - British Antarctic Survey
+date: last-modified
+---
+
+## BOOST-EDS
+
+-   Proof-of-concept cloud workflow
+-   Demonstrate EDS services within BAS
+-   JASMIN Object Store, Datalabs
+-   Records barriers and feed into WP4
+
+![](https://cdn.web.bas.ac.uk/bas-style-kit/0.6.1/img/logos-symbols/bas-logo-inverse-transparent-256.png)
+
+## Technical Overview
+
+![](images/cloud-example.jpg)
+
+## Use-case 1: Amundsen Sea Low Index (ASLI)
+
+-   Highly dynamic, mobile climatological low pressure system
+-   Crucial in understanding regional change over West Antarctica
+-   Good ASL representation improve climate models
+
+## ASLI Image
+
+![The Amundsen Seas Low (ASL) (Hosking et al. 2016)](images/asl.jpg)
+
+## Use-case 1: User requirements
+
+1.  Run monthly, when new ERA5 data is released
+2.  Human in-the-loop to approve data transfer
+3.  Automatic ingestion into the PDC, appending dataset
+4.  ERA5 re-calculation detection, triggering new DOI
+5.  Datalabs notebooks/application to interact with data
+
+## Use-case 1: Technical Overview
+![](images/asli-example.jpg)
+
+## Use-case 1: Summary
+- Useful demonstration of EDS services
+- Exposes limitations in current EDS offering
+- Not a genomics dataset
+- Quick implementation, project needs
+- Focus is on feeding into WP4
+
+## References {.smaller}
+
+Hosking, J. S., A. Orr, T. J. Bracegirdle, and J. Turner. Future circulation changes off West Antarctica: Sensitivity of the Amundsen Sea Low to projected anthropogenic forcing, Geophys. Res. Lett., 43, 367--376, (2016) https://doi:10.1002/2015GL067143

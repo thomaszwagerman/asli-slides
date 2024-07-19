@@ -1,24 +1,23 @@
 <!DOCTYPE html>
 <html lang="en"><head>
-<script src="template_files/libs/clipboard/clipboard.min.js"></script>
-<script src="template_files/libs/quarto-html/tabby.min.js"></script>
-<script src="template_files/libs/quarto-html/popper.min.js"></script>
-<script src="template_files/libs/quarto-html/tippy.umd.min.js"></script>
-<link href="template_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="template_files/libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="template_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
-<link href="template_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.3.353">
+<script src="index_files/libs/clipboard/clipboard.min.js"></script>
+<script src="index_files/libs/quarto-html/tabby.min.js"></script>
+<script src="index_files/libs/quarto-html/popper.min.js"></script>
+<script src="index_files/libs/quarto-html/tippy.umd.min.js"></script>
+<link href="index_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="index_files/libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="index_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
+<link href="index_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.5.55">
 
   <meta name="author" content="Thomas Zwagerman">
-  <meta name="author" content="David Wilby">
-  <meta name="dcterms.date" content="2024-05-31">
-  <title>Minimal Quarto RevealJS Theme</title>
+  <meta name="dcterms.date" content="2024-07-19">
+  <title>BOOST-EDS</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-  <link rel="stylesheet" href="template_files/libs/revealjs/dist/reset.css">
-  <link rel="stylesheet" href="template_files/libs/revealjs/dist/reveal.css">
+  <link rel="stylesheet" href="index_files/libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="index_files/libs/revealjs/dist/reveal.css">
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -32,12 +31,12 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="template_files/libs/revealjs/dist/theme/quarto.css">
+  <link rel="stylesheet" href="index_files/libs/revealjs/dist/theme/quarto.css">
   <link rel="stylesheet" href="https://cdn.web.bas.ac.uk/bas-style-kit/0.6.1/css/bas-style-kit.min.css">
-  <link href="template_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
-  <link href="template_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
-  <link href="template_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
-  <link href="template_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <link href="index_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="index_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="index_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="index_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
   <style type="text/css">
 
   .callout {
@@ -159,7 +158,8 @@
   }
 
   .callout.callout-titled .callout-body > .callout-content > :last-child {
-    margin-bottom: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-bottom: 0;
   }
 
   .callout.callout-titled .callout-icon::before {
@@ -328,8 +328,8 @@
     <div class="slides">
 
 <section id="title-slide" data-background-image="https://nercacuk.sharepoint.com/sites/basdigitalwmod-communications/creative%20services%20assets/ppt_title_halley.jpg" class="quarto-title-block center">
-  <h1 class="title">Minimal Quarto RevealJS Theme</h1>
-  <p class="subtitle">Mimicking Presentation Hub Guidance</p>
+  <h1 class="title">BOOST-EDS</h1>
+  <p class="subtitle">Demonstrating EDS services with ASLI</p>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -340,52 +340,86 @@ Thomas Zwagerman
             British Antarctic Survey
           </p>
     </div>
-<div class="quarto-title-author">
-<div class="quarto-title-author-name">
-David Wilby 
-</div>
-        <p class="quarto-title-affiliation">
-            British Antarctic Survey
-          </p>
-    </div>
 </div>
 
-  <p class="date">2024-05-31</p>
+  <p class="date">2024-07-19</p>
 </section>
-<section id="background-images" class="slide level2">
-<h2>Background images</h2>
-<p>You can choose different background images for title and content slides directly from the <a href="https://nercacuk.sharepoint.com/sites/BASDigitalwmod-Communications/sitePages/PowerPointPresentationsToolkit.aspx">presentation toolkit</a>.</p>
-<p>For the title slide, you will need to replace the link in <code>data-background-image:</code> in _extensions/basdoc/_extension.yml.</p>
-<p>For content slides, you will need to replace the link in <code>background-image:</code> in _extensions/basdoc/custom.scss</p>
+<section id="boost-eds" class="slide level2">
+<h2>BOOST-EDS</h2>
+<ul>
+<li>Proof-of-concept cloud workflow</li>
+<li>Demonstrate EDS services within BAS</li>
+<li>JASMIN Object Store, Datalabs</li>
+<li>Records barriers and feed into WP4</li>
+</ul>
+
+<img data-src="https://cdn.web.bas.ac.uk/bas-style-kit/0.6.1/img/logos-symbols/bas-logo-inverse-transparent-256.png" class="r-stretch"></section>
+<section id="technical-overview" class="slide level2">
+<h2>Technical Overview</h2>
+
+<img data-src="images/cloud-example.jpg" class="r-stretch"></section>
+<section id="use-case-1-amundsen-sea-low-index-asli" class="slide level2">
+<h2>Use-case 1: Amundsen Sea Low Index (ASLI)</h2>
+<ul>
+<li>Highly dynamic, mobile climatological low pressure system</li>
+<li>Crucial in understanding regional change over West Antarctica</li>
+<li>Good ASL representation improve climate models</li>
+</ul>
 </section>
-<section id="content-slides" class="slide level2" data-background-image="https://nercacuk.sharepoint.com/sites/basdigitalwmod-communications/creative%20services%20assets/ppt_page_adelie01.jpg">
-<h2>Content slides</h2>
-<p>Different background image for this slide only</p>
+<section id="asli-image" class="slide level2">
+<h2>ASLI Image</h2>
+
+<img data-src="images/asl.jpg" class="r-stretch quarto-figure-center"><p class="caption">The Amundsen Seas Low (ASL) (Hosking et al.&nbsp;2016)</p></section>
+<section id="use-case-1-user-requirements" class="slide level2">
+<h2>Use-case 1: User requirements</h2>
+<ol type="1">
+<li>Run monthly, when new ERA5 data is released</li>
+<li>Human in-the-loop to approve data transfer</li>
+<li>Automatic ingestion into the PDC, appending dataset</li>
+<li>ERA5 re-calculation detection, triggering new DOI</li>
+<li>Datalabs notebooks/application to interact with data</li>
+</ol>
 </section>
-<section id="general-revealjs-information" class="slide level2">
-<h2>General RevealJS Information</h2>
-<p>You can learn more about controlling the appearance of RevealJS output here: <a href="https://quarto.org/docs/presentations/revealjs/" class="uri">https://quarto.org/docs/presentations/revealjs/</a></p>
+<section id="use-case-1-technical-overview" class="slide level2">
+<h2>Use-case 1: Technical Overview</h2>
+
+<img data-src="images/asli-example.jpg" class="r-stretch"></section>
+<section id="use-case-1-summary" class="slide level2">
+<h2>Use-case 1: Summary</h2>
+<ul>
+<li>Useful demonstration of EDS services</li>
+<li>Exposes limitations in current EDS offering</li>
+<li>Not a genomics dataset</li>
+<li>Quick implementation, project needs</li>
+<li>Focus is on feeding into WP4</li>
+</ul>
+</section>
+<section id="references" class="slide level2 smaller">
+<h2>References</h2>
+<p>Hosking, J. S., A. Orr, T. J. Bracegirdle, and J. Turner. Future circulation changes off West Antarctica: Sensitivity of the Amundsen Sea Low to projected anthropogenic forcing, Geophys. Res. Lett., 43, 367–376, (2016) https://doi:10.1002/2015GL067143</p>
+<div class="quarto-auto-generated-content">
 <div class="footer footer-default">
 
+</div>
 </div>
 </section>
     </div>
   </div>
 
   <script>window.backupDefine = window.define; window.define = undefined;</script>
-  <script src="template_files/libs/revealjs/dist/reveal.js"></script>
+  <script src="index_files/libs/revealjs/dist/reveal.js"></script>
   <!-- reveal.js plugins -->
-  <script src="template_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
-  <script src="template_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
-  <script src="template_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
-  <script src="template_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
-  <script src="template_files/libs/revealjs/plugin/quarto-support/support.js"></script>
+  <script src="index_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="index_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="index_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="index_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="index_files/libs/revealjs/plugin/quarto-support/support.js"></script>
   
 
-  <script src="template_files/libs/revealjs/plugin/notes/notes.js"></script>
-  <script src="template_files/libs/revealjs/plugin/search/search.js"></script>
-  <script src="template_files/libs/revealjs/plugin/zoom/zoom.js"></script>
-  <script src="template_files/libs/revealjs/plugin/math/math.js"></script>
+  <script src="index_files/libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="index_files/libs/revealjs/plugin/search/search.js"></script>
+  <script src="index_files/libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="index_files/libs/revealjs/plugin/math/math.js"></script>
   <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
 
   <script>
@@ -395,7 +429,6 @@ David Wilby
       Reveal.initialize({
 'controlsAuto': true,
 'previewLinksAuto': false,
-'smaller': false,
 'pdfSeparateFragments': false,
 'autoAnimateEasing': "ease",
 'autoAnimateDuration': 1,
@@ -612,18 +645,7 @@ David Wilby
         }
         return false;
       }
-      const clipboard = new window.ClipboardJS('.code-copy-button', {
-        text: function(trigger) {
-          const codeEl = trigger.previousElementSibling.cloneNode(true);
-          for (const childEl of codeEl.children) {
-            if (isCodeAnnotation(childEl)) {
-              childEl.remove();
-            }
-          }
-          return codeEl.innerText;
-        }
-      });
-      clipboard.on('success', function(e) {
+      const onCopySuccess = function(e) {
         // button target
         const button = e.trigger;
         // don't keep focus
@@ -655,11 +677,50 @@ David Wilby
         }, 1000);
         // clear code selection
         e.clearSelection();
+      }
+      const getTextToCopy = function(trigger) {
+          const codeEl = trigger.previousElementSibling.cloneNode(true);
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+      }
+      const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+        text: getTextToCopy
       });
-      function tippyHover(el, contentFn) {
+      clipboard.on('success', onCopySuccess);
+      if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+        // For code content inside modals, clipBoardJS needs to be initialized with a container option
+        // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+        const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+          text: getTextToCopy,
+          container: window.document.getElementById('quarto-embedded-source-code-modal')
+        });
+        clipboardModal.on('success', onCopySuccess);
+      }
+        var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+        var mailtoRegex = new RegExp(/^mailto:/);
+          var filterRegex = new RegExp('/' + window.location.host + '/');
+        var isInternal = (href) => {
+            return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+        }
+        // Inspect non-navigation links and adorn them if external
+     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+        for (var i=0; i<links.length; i++) {
+          const link = links[i];
+          if (!isInternal(link.href)) {
+            // undo the damage that might have been done by quarto-nav.js in the case of
+            // links that we want to consider external
+            if (link.dataset.originalHref !== undefined) {
+              link.href = link.dataset.originalHref;
+            }
+          }
+        }
+      function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
         const config = {
           allowHTML: true,
-          content: contentFn,
           maxWidth: 500,
           delay: 100,
           arrow: false,
@@ -669,8 +730,17 @@ David Wilby
           interactive: true,
           interactiveBorder: 10,
           theme: 'light-border',
-          placement: 'bottom-start'
+          placement: 'bottom-start',
         };
+        if (contentFn) {
+          config.content = contentFn;
+        }
+        if (onTriggerFn) {
+          config.onTrigger = onTriggerFn;
+        }
+        if (onUntriggerFn) {
+          config.onUntrigger = onUntriggerFn;
+        }
           config['offset'] = [0,0];
           config['maxWidth'] = 700;
         window.tippy(el, config); 
@@ -684,7 +754,11 @@ David Wilby
           try { href = new URL(href).hash; } catch {}
           const id = href.replace(/^#\/?/, "");
           const note = window.document.getElementById(id);
-          return note.innerHTML;
+          if (note) {
+            return note.innerHTML;
+          } else {
+            return "";
+          }
         });
       }
       const findCites = (el) => {
