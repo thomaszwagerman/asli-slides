@@ -5,8 +5,20 @@ format:
   basdoc-revealjs: default
 author: 
   - Thomas Zwagerman
+  - David Wilby
+  - James Byrne
+  - Petra ten Hoopen
+  - Paul Breen
+  - Helen Peat
+  - Scott Hosking
 institute: 
-  - British Antarctic Survey
+  - DIT
+  - DIT
+  - DIT
+  - PDC
+  - PDC
+  - PDC
+  - AI-LAB
 date: last-modified
 ---
 
@@ -14,7 +26,7 @@ date: last-modified
 
 - Proof-of-concept cloud workflow
 - Goals:
-  1. Demonstrate NERC Environmental Data Service (EDS) tools and how we can leverage them at BAS
+  1. Demonstrate NERC Environmental Data Service (EDS) tools and how we can leverage them at BAS.
   2. Broader message on how to prepare research software for operationalisation.
 
 ![](https://cdn.web.bas.ac.uk/bas-style-kit/0.6.1/img/logos-symbols/bas-logo-inverse-transparent-256.png)
