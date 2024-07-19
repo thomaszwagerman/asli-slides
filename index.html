@@ -329,7 +329,7 @@
 
 <section id="title-slide" data-background-image="https://nercacuk.sharepoint.com/sites/basdigitalwmod-communications/creative%20services%20assets/ppt_title_halley.jpg" class="quarto-title-block center">
   <h1 class="title">BOOST-EDS</h1>
-  <p class="subtitle">Demonstrating EDS services with ASLI</p>
+  <p class="subtitle">Using EDS Services to automate data processing, host applications and archive live data products.</p>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -348,16 +348,33 @@ Thomas Zwagerman
 <h2>BOOST-EDS</h2>
 <ul>
 <li>Proof-of-concept cloud workflow</li>
-<li>Demonstrate EDS services within BAS</li>
-<li>JASMIN Object Store, Datalabs</li>
-<li>Records barriers and feed into WP4</li>
+<li>Goals:
+<ol type="1">
+<li>Demonstrate NERC Environmental Data Service (EDS) tools and how we can leverage them at BAS</li>
+<li>Broader message on how to prepare research software for operationalisation.</li>
+</ol></li>
 </ul>
 
 <img data-src="https://cdn.web.bas.ac.uk/bas-style-kit/0.6.1/img/logos-symbols/bas-logo-inverse-transparent-256.png" class="r-stretch"></section>
-<section id="technical-overview" class="slide level2">
-<h2>Technical Overview</h2>
-
-<img data-src="images/cloud-example.jpg" class="r-stretch"></section>
+<section id="nerc-eds-and-its-services" class="slide level2">
+<h2>NERC EDS and its services</h2>
+<ul>
+<li>What is the EDS?</li>
+<li>What is JASMIN?</li>
+<li>What is Datalabs?</li>
+<li>How do the data centres fit in?</li>
+</ul>
+</section>
+<section id="archival-into-the-uk-polar-data-centre" class="slide level2">
+<h2>Archival into the UK Polar Data centre</h2>
+<ul>
+<li>NERC Data Policy</li>
+<li>Data Management Plan (DMP)</li>
+<li>Minting of DOI</li>
+<li>BODC, NGDC, CEDA, EIDC</li>
+<li>DSW, FAIR Principles</li>
+</ul>
+</section>
 <section id="use-case-1-amundsen-sea-low-index-asli" class="slide level2">
 <h2>Use-case 1: Amundsen Sea Low Index (ASLI)</h2>
 <ul>
@@ -366,37 +383,61 @@ Thomas Zwagerman
 <li>Good ASL representation improve climate models</li>
 </ul>
 </section>
-<section id="asli-image" class="slide level2">
-<h2>ASLI Image</h2>
+<section id="use-case-1-asli-image" class="slide level2">
+<h2>Use-case 1: ASLI Image</h2>
 
 <img data-src="images/asl.jpg" class="r-stretch quarto-figure-center"><p class="caption">The Amundsen Seas Low (ASL) (Hosking et al.&nbsp;2016)</p></section>
 <section id="use-case-1-user-requirements" class="slide level2">
-<h2>Use-case 1: User requirements</h2>
+<h2>Use-case 1: User Requirements</h2>
 <ol type="1">
-<li>Run monthly, when new ERA5 data is released</li>
-<li>Human in-the-loop to approve data transfer</li>
-<li>Automatic ingestion into the PDC, appending dataset</li>
-<li>ERA5 re-calculation detection, triggering new DOI</li>
-<li>Datalabs notebooks/application to interact with data</li>
+<li>Run monthly, when new ERA5 data is released.</li>
+<li>Automated data processing pipeline which performs calculations.</li>
+<li>Data accessible to other systems, notebook, app, digital twin?</li>
+<li>Automatic archival into the PDC, appending dataset under same DOI.</li>
 </ol>
 </section>
-<section id="use-case-1-technical-overview" class="slide level2">
-<h2>Use-case 1: Technical Overview</h2>
+<section id="use-case-1-the-onion" class="slide level2">
+<h2>Use-case 1: The Onion</h2>
+<ul>
+<li><a href="https://github.com/davidwilby/amundsen-sea-low-index">asli</a> (Hosking &amp; Wilby 2024): Python package containing ASL calculations described in Hosking et al.&nbsp;(2016).</li>
+<li><a href="https://github.com/antarctica/asli-pipeline">asli-pipeline</a>: Data processing pipeline.</li>
+<li><a href="https://github.com/antarctica/asliapp/tree/main">asliapp</a>: Shiny application.</li>
+</ul>
+</section>
+<section id="use-case-1-technical-implementation" class="slide level2">
+<h2>Use-case 1: Technical Implementation</h2>
 
 <img data-src="images/asli-example.jpg" class="r-stretch"></section>
-<section id="use-case-1-summary" class="slide level2">
-<h2>Use-case 1: Summary</h2>
+<section id="discussion-fair-principles" class="slide level2">
+<h2>Discussion: FAIR Principles</h2>
 <ul>
-<li>Useful demonstration of EDS services</li>
-<li>Exposes limitations in current EDS offering</li>
-<li>Not a genomics dataset</li>
-<li>Quick implementation, project needs</li>
-<li>Focus is on feeding into WP4</li>
+<li>FAIR Principles: archival of “live” data products.</li>
+<li>Providing full provenance for a derived dataset.</li>
+</ul>
+</section>
+<section id="discussion-operationalising-research-software" class="slide level2">
+<h2>Discussion: Operationalising Research Software</h2>
+<ul>
+<li>Combining digital research infrastructure (DRI).</li>
+<li>Separation of <strong>data - code - configuration</strong>.</li>
+<li>Enabling deployment on different DRI.</li>
+<li>Preparing RS for deployment to operational systems ahead of time</li>
+</ul>
+</section>
+<section id="discussion-limitations-of-eds-servicse" class="slide level2">
+<h2>Discussion: Limitations of EDS servicse</h2>
+<ul>
+<li>Digital <strong>research</strong> infrastructure - not for production.</li>
+<li><em>“Everything is prototype”.</em></li>
+<li>No clear guidance on cloud-optimised data formats keeping in mind accessibility to large datasets, performance, cost-effectiveness, reliability, collaboration benefits</li>
 </ul>
 </section>
 <section id="references" class="slide level2 smaller">
 <h2>References</h2>
-<p>Hosking, J. S., A. Orr, T. J. Bracegirdle, and J. Turner. Future circulation changes off West Antarctica: Sensitivity of the Amundsen Sea Low to projected anthropogenic forcing, Geophys. Res. Lett., 43, 367–376, (2016) https://doi:10.1002/2015GL067143</p>
+<p>Brown, M. J., &amp; Chevuturi, A. object_store_tutorial [Computer software]. https://github.com/NERC-CEH/object_store_tutorial</p>
+<p>Hosking, J. S., A. Orr, T. J. Bracegirdle, and J. Turner (2016), Future circulation changes off West Antarctica: Sensitivity of the Amundsen Sea Low to projected anthropogenic forcing, Geophys. Res. Lett., 43, 367–376, doi:10.1002/2015GL067143.</p>
+<p>Hosking, J. S., &amp; Wilby, D. asli [Computer software]. https://github.com/scotthosking/amundsen-sea-low-index</p>
+<p>Lawrence, B. N. , Bennett, V. L., Churchill, J., Juckes, M., Kershaw, P., Pascoe, S., Pepler, S., Pritchard, M. and Stephens, A. (2013) Storing and manipulating environmental big data with JASMIN. In: IEEE Big Data, October 6-9, 2013, San Francisco.</p>
 <div class="quarto-auto-generated-content">
 <div class="footer footer-default">
 
