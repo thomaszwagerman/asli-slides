@@ -1,97 +1,23 @@
-# Quarto BAS Theme
+# BOOST-EDS: ASLI work reveal.js presentation
+A reveal.js presentation describing work undertaken under BOOST-EDS, demonstrating archival of a live data product using [NERC EDS](https://eds.ukri.org/environmental-data-service) cloud services.
 
-This is a template repository using `Quarto` `reveal.js`:
+We deployed a data processing pipeline on [JASMIN](https://jasmin.ac.uk/) and a [Shiny application on Datalabs](https://ditbas-asliapp.datalabs.ceh.ac.uk/), and designed a method to automatically archive data into the [UK PDC](https://www.bas.ac.uk/data/uk-pdc/).
 
-![](images/title-slide.png)
-
-This is a minimal template intended to mimic the [Presentation Hub's PowerPoint guidance](https://nercacuk.sharepoint.com/sites/BASDigitalwmod-Communications/sitePages/PowerPointPresentationsToolkit.aspx).
-
-It sets background images for the title and content slides, and refers to the BAS Style Kit CSS file, as per the [BAS Style Kit's Getting Started page](https://style-kit.web.bas.ac.uk/start/introduction/).
-
-## Installing
-### New Directory
-``` bash
-quarto use template antarctica/basdoc
-```
-This will install the extension in a new directory and create a `template.qmd` (automatically named after your new directory) file that you can use as a starting place for your presentation.
-
-### Existing Directory
-To add the extension to an existing directory, you can use:
-``` bash
-quarto add antarctica/basdoc
-```
-This will add the extension to an existing directory, but will not provide you with a `template.qmd` file. Note that you will need to update the YAML headers in your existing qmd files (or `_quarto.yml`) to refer to `basdoc-revealjs`, matching template.qmd:
-
-```yaml
-format:
-  basdoc-revealjs: default
-```
-
-## Background images
-
-You can choose different background images for title and content slides directly from the [presentation toolkit](https://nercacuk.sharepoint.com/sites/BASDigitalwmod-Communications/sitePages/PowerPointPresentationsToolkit.aspx).
-
-To change the **title slide** image, in `_extensions/basdoc/_extension.yml` replace `data-background-image:`.
-
-``` yaml
-title-slide-attributes: 
-  data-background-image: https://nercacuk.sharepoint.com/sites/basdigitalwmod-communications/creative%20services%20assets/ppt_title_halley.jpg
-```
-
-For **content slides**, in `_extensions/basdoc/custom.scss` replace `background-image:`
-
-``` sass
-/*-- scss:rules --*/
-.slide-background-content{
-  background-image: url("https://nercacuk.sharepoint.com/sites/basdigitalwmod-communications/creative%20services%20assets/ppt_page_glider01.jpg");
-  background-size: 100% 100%
-}
-```
-
-![](images/content-slide.png)
-
-If you want to override the global content slide background, you can do so by specifying it in the slide title:
-
-```md
-## Content slides {background-image=https://nercacuk.sharepoint.com/sites/basdigitalwmod-communications/creative%20services%20assets/ppt_page_adelie01.jpg}
-text
-```
-
-Note that images will only be displayed, if you have access to the [BAS Digital Workspace](https://nercacuk.sharepoint.com/sites/basdigitalwmod-whats-new).
-
-## Using this as a GitHub repository template
-
-This repository can also be used as a GitHub repository template. Click `Use this template` above to make a copy of it to your own account.
-
-### Enabling GitHub actions and GitHub Pages
-
-One benefit is using GitHub actions to automatically build the presentation as a GitHub pages website.
-
-In your repository settings, enable GitHub Actions (if they aren't already) and Pages.
-
-Under the **Actions** page in your repo's settings, under **Workflow permissions** enable "Read and Write Permissions".
-
-Once the actions have run once and created the `gh-pages` branch, you can select it as your pages source under the **Pages** page.
-
-Note that while your main presentation file might take one of a number of names (e.g. `template.qmd`, `your-directory-name.qmd` etc.), Github Pages will always look for `index.html` (the rendered version of `index.qmd`) for the landing page. You will need to rename your main presentation file to `index.qmd`, for your presentation to render on `your-organisation.github.io/your-repository`. For example, `template.qmd` will render on `your-organisation.github.io/your-repository/template.`
-
-## Contributing
-### Without write access
-Corrections, suggestions and general improvements are welcome as [issues](https://github.com/antarctica/basdoc/issues).
-
-You can also suggest changes by forking this repository, and opening a pull request. Please target your pull requests to the main branch.
-
-### With write access
-You can push directly to main for small fixes. Please use PRs to main for discussing larger updates.
+Related repositories:
+* [asli](https://github.com/davidwilby/amundsen-sea-low-index) (Hosking & Wilby 2024): Python package containing ASL calculations described in Hosking et al. (2016)/
+* [asli-pipeline](https://github.com/antarctica/asli-pipeline): Data processing pipeline.
+* [asliapp](https://github.com/antarctica/asliapp/tree/main): Shiny application.
 
 ## Acknowledgements
+This work used JASMIN, the UK’s collaborative data analysis environment (https://www.jasmin.ac.uk).
 
-Template created using [Quarto Creating Extensions \> Custom Formats](https://quarto.org/docs/extensions/formats.html#quick-start).
+This work used [Datalabs](https://datalab.datalabs.ceh.ac.uk/).
 
-CSS Style sheets and guidance from [BAS Style Kit](https://style-kit.web.bas.ac.uk/).
+## References
+Brown, M. J., & Chevuturi, A. object_store_tutorial [Computer software]. https://github.com/NERC-CEH/object_store_tutorial
 
-Background images and guidance from [BAS Presentation Hub](https://nercacuk.sharepoint.com/sites/BASDigitalwmod-Communications/sitePages/presentation-hub.aspx).
+Hosking, J. S., A. Orr, T. J. Bracegirdle, and J. Turner (2016), Future circulation changes off West Antarctica: Sensitivity of the Amundsen Sea Low to projected anthropogenic forcing, Geophys. Res. Lett., 43, 367–376, doi:10.1002/2015GL067143.
 
-Github Actions templating was adapted from David Wilby's [quarto-presentation-template](https://github.com/davidwilby/quarto-presentation-template).
+Hosking, J. S., & Wilby, D. asli [Computer software]. https://github.com/scotthosking/amundsen-sea-low-index
 
-This repository aims to provide a minimum template. Further customisation is up to the user, see [General Guidance on branding and logos](https://nercacuk.sharepoint.com/sites/BASDigitalwmod-Communications/sitePages/BrandingandLogos.aspx).
+Lawrence, B. N. , Bennett, V. L., Churchill, J., Juckes, M., Kershaw, P., Pascoe, S., Pepler, S., Pritchard, M. and Stephens, A. (2013) Storing and manipulating environmental big data with JASMIN. In: IEEE Big Data, October 6-9, 2013, San Francisco.
